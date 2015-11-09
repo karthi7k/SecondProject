@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</head>
+	
+	<body>
+	
+		<div id="container">
+			
+			<div id="header"> </div>
+			
+			<div id="bodyLayer"> 
+				<div id="leftLayer">
+					<div id="navDrawer"></div>
+				</div>
+				
+				<div id="middleLayer">
+			
+					<div id="bannerContainer">
+						<div id="dashheading">
+							<p id="dash">DashBoard</p>
+						</div>
+					
+						<div id="bannerLayer">
+							<div id="banner1"></div>
+							<div id="banner2"></div>
+							<div id="banner3"></div>
+						</div>
+					</div>
+
+					<div id="piechartLayer1">
+						<div id="piechartF1"> 
+							<p id="dash">Chart1</p>
+						</div>
+						<div id="piechartF2">
+							<p id="dash">Chart2</p>
+						</div>
+					</div>
+					
+					<div id="barchartLayer">
+						<div id="barchart"></div>
+					</div>
+					<div id="piechartLayer2">
+						<div id="piechartS1"></div>
+						<div id="piechartS2"></div>
+					</div>
+				</div>
+			
+				<div id="rightLayer">
+				
+						<div id="rightContainer">
+					
+						<div id="filterheading"><p>Filters</p></div>
+					
+						<div id="filter_client">
+						
+							<div id="clientheading"><p>Client</p></div>
+						
+							
+							<ul class="goo-collapsible">
+								<li class="header">MAIN NAVIGATION</li>
+								<li class="dropdown"><a class="" href="#"> Age</a>
+									<ul>
+										<li><input type="checkbox" id="a1" name="c1"/><label for="a1">< 25</label></li>
+										<li><input type="checkbox" id="a2" name="c2"/><label for="a2">25 - 60</label></li>
+										<li><input type="checkbox" id="a3" name="c3"/><label for="a3">> 60</label></li>
+									</ul>
+								</li>
+								<li><a href="#">Folder</a></li>
+								<li class="dropdown"><a href="#"> Location</a>
+									<ul>
+										<li><a href="#">Group</a></li>
+										<li><a href="#">User</a></li>
+									</ul>
+								</li>
+								<li><a href="#"> Risk Factor</a></li>                
+							</ul>
+								<ul class="goo-collapsible">
+								<li class="header">MAIN NAVIGATION</li>
+								<li class="dropdown"><a class="" href="#"> Age</a>
+									<ul>
+										<li><input type="checkbox" id="a1" name="c1"/><label for="a1">< 25</label></li>
+										<li><input type="checkbox" id="a2" name="c2"/><label for="a2">25 - 60</label></li>
+										<li><input type="checkbox" id="a3" name="c3"/><label for="a3">> 60</label></li>
+									</ul>
+								</li>
+								<li><a href="#">Folder</a></li>
+								<li class="dropdown"><a href="#"> Location</a>
+									<ul>
+										<li><a href="#">Group</a></li>
+										<li><a href="#">User</a></li>
+									</ul>
+								</li>
+								<li><a href="#"> Risk Factor</a></li>                
+							</ul>
+								<ul class="goo-collapsible">
+								<li class="header">MAIN NAVIGATION</li>
+								<li class="dropdown"><a class="" href="#"> Age</a>
+									<ul>
+										<li><input type="checkbox" id="a1" name="c1"/><label for="a1">< 25</label></li>
+										<li><input type="checkbox" id="a2" name="c2"/><label for="a2">25 - 60</label></li>
+										<li><input type="checkbox" id="a3" name="c3"/><label for="a3">> 60</label></li>
+									</ul>
+								</li>
+								<li><a href="#">Folder</a></li>
+								<li class="dropdown"><a href="#"> Location</a>
+									<ul>
+										<li><a href="#">Group</a></li>
+										<li><a href="#">User</a></li>
+									</ul>
+								</li>
+								<li><a href="#"> Risk Factor</a></li>                
+							</ul>
+								<ul class="goo-collapsible">
+								<li class="header">MAIN NAVIGATION</li>
+								<li class="dropdown"><a class="" href="#"> Age</a>
+									<ul>
+										<li><input type="checkbox" id="a1" name="c1"/><label for="a1">< 25</label></li>
+										<li><input type="checkbox" id="a2" name="c2"/><label for="a2">25 - 60</label></li>
+										<li><input type="checkbox" id="a3" name="c3"/><label for="a3">> 60</label></li>
+									</ul>
+								</li>
+								<li><a href="#">Folder</a></li>
+								<li class="dropdown"><a href="#"> Location</a>
+									<ul>
+										<li><a href="#">Group</a></li>
+										<li><a href="#">User</a></li>
+									</ul>
+								</li>
+								<li><a href="#"> Risk Factor</a></li>                
+							</ul>
+							
+								
+						
+							</div>
+						<div id="filter_fa"></div>
+						<div id="topten"></div>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+			
+			
+			
+		</div>
+	
+	<script>
+$( document ).ready(function() {
+alert('abc');
+
+$(".goo-collapsible > li > a").on("click", function(e){
+    
+    //if submenu is hidden, does not have active class  
+	if(!$(this).hasClass("active")) {
+		
+    	// hide any open menus and remove active classes
+		$(".goo-collapsible li ul").slideUp(350);
+		$(".goo-collapsible li a").removeClass("active");
+      
+		// open submenu and add the active class
+		$(this).next("ul").slideDown(350);
+		$(this).addClass("active");
+		
+    //if submenu is visible    
+	}else if($(this).hasClass("active")) {
+		
+        //hide submenu and remove active class
+		$(this).removeClass("active");
+		$(this).next("ul").slideUp(350);
+	}
+});
+});
+
+</script>
+	
+	</body>
+	
+</html>
