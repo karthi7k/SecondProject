@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style2.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	</head>
 	
@@ -24,8 +24,8 @@
 						</div>
 					
 						<div id="bannerLayer">
-							<div id="banner1"></div>
-							<div id="banner2"></div>
+							<div id="banner1" onclick="changeTheme1()"></div>
+							<div id="banner2" onclick="changeTheme2()"></div>
 							<div id="banner3"></div>
 						</div>
 					</div>
@@ -176,7 +176,41 @@ $(".goo-collapsible > li > a").on("click", function(e){
 });
 
 </script>
+	<script>
 	
+	function changeTheme1()
+	{
+	document.getElementById("container").style.backgroundColor='#f2f2f2';
+	document.getElementById("header").style.backgroundColor='#4d7397';
+	document.getElementById("bodyLayer").style.backgroundColor='#f2f2f2';
+	document.getElementById("leftLayer").style.backgroundColor='#f9f9f9';
+	document.getElementById("dashheading").style.backgroundColor='#f9f9f9';
+	document.getElementById("bannerLayer").style.backgroundColor='#ffffff';
+	document.getElementById("piechartLayer1").style.backgroundColor='#f9f9f9';
+	document.getElementById("piechartF1").style.backgroundColor='#ffffff';
+	document.getElementById("piechartF2").style.backgroundColor='#ffffff';
+	document.getElementById("barchartLayer").style.backgroundColor='#f9f9f9';
+	document.getElementById("barchart").style.backgroundColor='#ffffff';
+	document.getElementById("rightLayer").style.backgroundColor='#f9f9f9';
+	
+	}
+	function changeTheme2()
+	{
+	document.getElementById("container").style.backgroundColor='#202020';
+	document.getElementById("header").style.backgroundColor='#010203';
+	document.getElementById("bodyLayer").style.backgroundColor='#202020';
+	document.getElementById("leftLayer").style.backgroundColor='#060708';
+	document.getElementById("dashheading").style.backgroundColor='#060708';
+	document.getElementById("bannerLayer").style.backgroundColor='#1b1b20';
+	document.getElementById("piechartLayer1").style.backgroundColor='#060708';
+	document.getElementById("piechartF1").style.backgroundColor='#1b1b20';
+	document.getElementById("piechartF2").style.backgroundColor='#1b1b20';
+	document.getElementById("barchartLayer").style.backgroundColor='#060708';
+	document.getElementById("barchart").style.backgroundColor='#1b1b20';
+	document.getElementById("rightLayer").style.backgroundColor='#060708';
+	}
+	</script>
 	</body>
 	
 </html>
+
